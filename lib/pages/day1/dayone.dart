@@ -1,10 +1,6 @@
 // ignore_for_file: deprecated_member_use
 
-import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
-import 'package:responsive_sizer/responsive_sizer.dart';
-import 'package:uidesign1to100/const/appcolor.dart';
-import 'package:uidesign1to100/widget/animated_text.dart';
+import 'package:uidesign1to100/export.dart';
 
 class DayOne extends StatelessWidget {
   const DayOne({super.key});

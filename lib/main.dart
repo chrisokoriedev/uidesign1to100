@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:responsive_sizer/responsive_sizer.dart';
-import 'package:uidesign1to100/pages/day1/dayone.dart';
+
+
+import 'export.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           ),
-          home: const DayOne(),
+          home: const Demo(),
         );
       },
     );
