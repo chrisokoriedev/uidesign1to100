@@ -7,30 +7,28 @@ class MainListScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(
-      slivers: [
-        SliverAnimatedList(
-          initialItemCount: screen.length,
-          itemBuilder: (
-            BuildContext context,
-            int index,
-            Animation<double> animation,
-          ) {
-            return SlideTransition(
-              position: animation.drive(
-                Tween<Offset>(
-                  begin: const Offset(1, 0),
-                  end: Offset.zero,
-                ).chain(CurveTween(curve: Curves.easeInOut)),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: screen[index],
-              ),
-            );
-          },
-        ),
-      ],
+    return Scaffold(
+      body: MasonryGridView.count(
+        crossAxisCount: 4,
+        mainAxisSpacing: 4,
+        crossAxisSpacing: 4,
+        itemBuilder: (context, index) {
+          return tile(index: index, extent: (index % 5 + 1) * 100);
+        },
+      ),
     );
   }
+}
+
+Widget tile({required int index, required double extent}) {
+  return Container(
+    height: extent,
+    color: Colors.blue[(index % 9 + 1) * 100],
+    child: Center(
+      child: Text(
+        'Tile $index',
+        style: TextStyle(color: Colors.white, fontSize: 20),
+      ),
+    ),
+  );
 }
