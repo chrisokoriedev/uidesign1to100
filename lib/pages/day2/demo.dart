@@ -1,4 +1,3 @@
-import 'package:animate_do/animate_do.dart';
 import 'package:uidesign1to100/export.dart';
 
 class Demo extends StatelessWidget {
