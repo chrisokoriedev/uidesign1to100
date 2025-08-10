@@ -6,7 +6,7 @@ class MainListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200],
+      backgroundColor: Colors.black,
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.transparent,
@@ -15,7 +15,7 @@ class MainListScreen extends StatelessWidget {
           'UI Designs',
           style: GoogleFonts.poppins(
             fontWeight: FontWeight.bold,
-            color: Colors.black87,
+            color: Colors.white,
           ),
         ),
       ),
@@ -40,4 +40,3 @@ class MainListScreen extends StatelessWidget {
     );
   }
 }
-
