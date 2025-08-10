@@ -1,10 +1,22 @@
 import 'package:uidesign1to100/util/export.dart';
 
+import 'screen/main_cntrl.dart';
+
 class Demo3 extends StatelessWidget {
   const Demo3({super.key});
 
   @override
   Widget build(BuildContext context) {
+    Future.microtask(() {
+      Future.delayed(Duration(seconds: 2), () {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const MainControl(),
+          ),
+        );
+      });
+    });
     return Scaffold(
       body: Container(
         width: double.infinity,
@@ -16,12 +28,12 @@ class Demo3 extends StatelessWidget {
           children: [
             Text(
               'Chrisbites',
-              style: GoogleFonts.poppins(
+              style: GoogleFonts.abel(
                 fontSize: 30.sp,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
-            ),
+            ).fadeIn(delay: Duration(milliseconds: 500)),
           ],
         ),
       ),
