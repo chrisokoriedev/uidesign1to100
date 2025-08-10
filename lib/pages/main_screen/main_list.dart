@@ -82,8 +82,6 @@ class ModernUiTile extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Icon(icons[index % icons.length], color: Colors.white, size: 40),
-              const Spacer(),
               Text(
                 'Design $index',
                 textAlign: TextAlign.center,
