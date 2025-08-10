@@ -1,6 +1,6 @@
 // ignore_for_file: deprecated_member_use
 
-import 'package:uidesign1to100/export.dart';
+import 'package:uidesign1to100/util/export.dart';
 
 class DayOne extends StatelessWidget {
   const DayOne({super.key});

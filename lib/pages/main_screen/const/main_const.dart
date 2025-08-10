@@ -1,6 +1,7 @@
-import 'package:uidesign1to100/export.dart';
+import 'package:uidesign1to100/util/export.dart';
 
 final List<IconData> icons = [Icons.palette, Icons.camera, Icons.widgets];
+List<Widget> screen = [DayOne(), Demo(), Demo3()];
 
 // Add some gradients for the tiles
 final List<LinearGradient> gradients = [

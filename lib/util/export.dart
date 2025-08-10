@@ -12,6 +12,9 @@ export 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 export 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 export 'package:glassmorphism/glassmorphism.dart';
 export 'package:google_fonts/google_fonts.dart';
+export 'package:uidesign1to100/pages/main_screen/const/main_const.dart';
+export 'package:uidesign1to100/util/extension.dart';
+
 
 // export '';
 // export '';
