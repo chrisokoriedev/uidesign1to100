@@ -50,3 +50,14 @@ extension ColorOpacityExtension on Color {
     return withValues(alpha: opacity);
   }
 }
+
+
+extension GradientOpacity on LinearGradient {
+  LinearGradient withOpacity(double opacity) {
+    return LinearGradient(
+      colors: colors.map((c) => c.withOpacityN(opacity)).toList(),
+      begin: begin,
+      end: end,
+    );
+  }
+}

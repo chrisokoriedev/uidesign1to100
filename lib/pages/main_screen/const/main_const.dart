@@ -5,17 +5,17 @@ final List<Widget> screen = [DayOne(), Demo(), Demo3()];
 // Minimal gradients in monochrome
 final List<LinearGradient> gradients = [
   const LinearGradient(
-    colors: [Colors.black87, Colors.black54],
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
-  ),
-   LinearGradient(
-    colors: [Colors.grey.shade900, Colors.grey.shade700],
+    colors: [Color(0xFF0D0D0D), Color(0xFF1A237E)], // black → deep indigo
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   ),
   const LinearGradient(
-    colors: [Colors.black45, Colors.black26],
+    colors: [Color(0xFF0D47A1), Color(0xFF000000)], // royal blue → black
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  ),
+  const LinearGradient(
+    colors: [Color(0xFF1A237E), Color(0xFF0D0D0D)], // indigo → black
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   ),

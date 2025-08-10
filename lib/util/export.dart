@@ -14,6 +14,8 @@ export 'package:glassmorphism/glassmorphism.dart';
 export 'package:google_fonts/google_fonts.dart';
 export 'package:uidesign1to100/pages/main_screen/const/main_const.dart';
 export 'package:uidesign1to100/util/extension.dart';
+export 'package:uidesign1to100/pages/main_screen/const/main_menu_widget.dart';
+
 
 
 // export '';
