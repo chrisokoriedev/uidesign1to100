@@ -9,11 +9,11 @@ class MainListScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: MasonryGridView.count(
-        crossAxisCount: 4,
+        crossAxisCount: 2,
         mainAxisSpacing: 4,
         crossAxisSpacing: 4,
         itemBuilder: (context, index) {
-          return tile(index: index, extent: (index % 5 + 1) * 100);
+          return tile(index: index, extent: (index % 3 + 1) *100);
         },
       ),
     );
