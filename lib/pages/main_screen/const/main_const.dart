@@ -20,3 +20,10 @@ final List<LinearGradient> gradients = [
     end: Alignment.bottomRight,
   ),
 ];
+
+final screens = [
+  const Center(child: Text('Home Screen Placeholder')),
+  const Center(child: Text('Search Screen Placeholder')),
+  const Center(child: Text('Notifications Screen Placeholder')),
+  const Center(child: Text('Profile Screen Placeholder')),
+];
